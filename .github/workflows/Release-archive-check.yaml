@@ -1,0 +1,66 @@
+name: Release archive check
+
+# Run manually for the frozen oes 1.0.0 release candidate. Ordinary source
+# checks remain in R-CMD-check.yaml for future development commits.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  archive-check:
+    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
+    runs-on: ${{ matrix.config.os }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {os: windows-latest, r: 'release'}
+          - {os: windows-latest, r: 'devel', http-user-agent: 'release'}
+          - {os: macos-latest, r: 'release'}
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: 'yes'
+      # Incoming checks are enabled for this release candidate. The PDF
+      # manual is omitted here; its full Linux check is recorded separately.
+      _R_CHECK_CRAN_INCOMING_: 'true'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: r-lib/actions/setup-pandoc@v2
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ matrix.config.r }}
+          http-user-agent: ${{ matrix.config.http-user-agent }}
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::rcmdcheck
+            any::digest
+          needs: check
+      - name: Check exact release archive
+        shell: Rscript {0}
+        run: |
+          archive <- "development/release/oes_1.0.0.tar.gz"
+          expected <- "2249ccbe63a60a6af05ad5cb80b622bf4fd4a66f72367624fe6eb9ba2f7c8983"
+          if (!file.exists(archive)) stop("Upload the frozen oes_1.0.0.tar.gz to development/release/ first.")
+          actual <- digest::digest(archive, algo = "sha256", file = TRUE, serialize = FALSE)
+          stopifnot(identical(actual, expected))
+          dir.create("check", showWarnings = FALSE)
+          writeLines(c(paste("Archive:", archive), paste("SHA256:", actual)), "check/archive-identity.txt")
+          writeLines(capture.output(sessionInfo()), "check/session-info.txt")
+          rcmdcheck::rcmdcheck(
+            path = archive,
+            args = c("--no-manual", "--as-cran"),
+            check_dir = "check",
+            error_on = "warning",
+            timeout = 1800
+          )
+      - name: Preserve check results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: release-archive-${{ matrix.config.os }}-${{ matrix.config.r }}
+          path: check/
+          retention-days: 30
