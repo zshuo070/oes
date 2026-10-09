@@ -1,0 +1,10 @@
+{
+  "archive_bytes": 37875,
+  "archive_sha256": "5e23cf8010e945395f6add3edcabdf9b42368ccce6e57cbd705afb70c4383f09",
+  "reference_checks": "passed",
+  "relative_links": "passed",
+  "implementation_and_test_assertions": "unchanged",
+  "example_csv": "unchanged",
+  "test_rerun": false,
+  "full_check_rerun": false
+}

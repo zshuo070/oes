@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: oes: Optimal Effect-Size-Based Y-Axis Ranges</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script>
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>oes-package</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>oes: Optimal Effect-Size-Based Y-Axis Ranges</h2>
+
+<h3>Description</h3>
+
+<p>Compute effect-size-informed y-axis recommendations and display them
+with mean/error-bar plots or existing ggplot objects. Calibration constants
+come from single-factor, two-level comparisons. The implementation supports
+broader between-subject, within-subject, and mixed factorial designs as
+computational generalizations.
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>optimal_graph</code> is the package's sole exported function.
+Use it for graphical and text output, or request <code>detail = TRUE</code>
+with graph output and inspect the returned <code>oes</code> component for
+numeric limits and calculation metadata. Calculation helpers are internal.
+Recommendations depend on the specified design and effect-size method;
+explicitly identify repeated measurements and participant IDs.
+</p>
+<p>Confidence-interval options follow the distinctions in Cousineau (2017).
+Difference adjustment multiplies half-widths by <code class="reqn">\sqrt{2}</code>
+(Equation 3). Repeated-measures base intervals use Cousineau's (2005)
+normalization and Morey's (2008) bias correction. The separate
+<code>"ci95_corr"</code> option returns these base intervals without
+<code class="reqn">\sqrt{2}</code> and is not the 2017 article's combined comparative
+construction. <code>"ci95_dif_corr"</code> adds <code class="reqn">\sqrt{2}</code>, combining
+the adjustments described in Equation 5b. <code>"se"</code> and
+<code>"sd"</code> use one standard error or standard deviation.
+These sources support CI construction; the OES expansion rule and
+calibration constants come from the effect-size manuscript.
+</p>
+<p><em>Visualizing Standardized Effect Sizes Using the Framework of Graph Perception and Data Visualization</em>
+(Shuo Zang and Denis Cousineau, 2026, unpublished manuscript) studied
+single-factor, two-level
+comparisons across different populations and sample sizes, focusing on
+Cohen's d. Broader independent, repeated-measures, and mixed factorial
+support does not constitute empirical validation of the generalized
+y-axis recommendations. Hedges' g, paired dz, multi-factor maximum-effect
+selection, and generalized ER use beyond the studied comparisons are
+unvalidated extensions. Alternative base ranges are exploratory.
+</p>
+<p>The parameter <code class="reqn">a</code> is taken directly from the effect-size study: 5.723 for
+<code class="reqn">X \geq 0.8</code>, 1.575 for <code class="reqn">0.5 \leq X &lt; 0.8</code>, and 0.254 for
+<code class="reqn">0.2 \leq X &lt; 0.5</code>. These values may change in later versions as
+further evidence becomes available. See <code>optimal_graph</code> for the exact
+implemented expansion, pooling, and fallback rules.
+</p>
+<p>A separate methods paper is planned to explain the package's derivation
+from the effect-size study. It is not yet published; the package does not supply
+a citation to that planned paper.
+</p>
+<p>Version 1.0.0 is the first public package version, based on the V1.8
+development implementation. The code is available under the MIT license.
+Run <code>citation("oes")</code> for the software citation.
+</p>
+
+
+<h3>Public data resources</h3>
+
+<p>The effect-size manuscript is associated with Shuo Zang and Denis
+Cousineau's 2025 OSF resource, <em>Visualizing Standardized Effect Sizes Using the Framework of Graph Perception and Data Visualization</em>,
+licensed under CC BY 4.0: \Sexpr[results=rd]{tools:::Rd_expr_doi("10.17605/OSF.IO/DRCTA")}. This DOI identifies
+the OSF resource, not a published-paper or software DOI.
+</p>
+<p>The supplied <code>Study4_long.csv</code> example data come from Shuo Zang and
+Denis Cousineau's 2025 OSF project, &ldquo;When Error Bars Fail to Correct
+Misleading Charts: Judgments of Lower y-axis Truncation across Layouts and
+Audiences&rdquo;, under CC BY 4.0. The project and source-file links are
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.17605/OSF.IO/DTYBF")} and
+<a href="https://osf.io/dtybf/files/ebsh5">https://osf.io/dtybf/files/ebsh5</a>.
+This is the error-bar project, not the effect-size calibration dataset.
+The package's self-contained examples and tests do not download these
+resources or require their files.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Shuo Zang and Denis Cousineau, School of Psychology, University of Ottawa.
+Maintainer: Shuo Zang <a href="mailto:zshuo070@gmail.com">zshuo070@gmail.com</a>.
+Shuo Zang's ORCID: <a href="https://orcid.org/0009-0000-4387-8145">https://orcid.org/0009-0000-4387-8145</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Zang, S., and Cousineau, D. (2026).
+<em>Visualizing Standardized Effect Sizes Using the Framework of Graph Perception and Data Visualization</em>. Unpublished manuscript.
+</p>
+<p>Cousineau, D. (2017). Varieties of confidence intervals.
+<em>Advances in Cognitive Psychology</em>, 13(2), 140&ndash;155.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.5709/acp-0214-z")}
+</p>
+<p>Cousineau, D. (2005). Confidence intervals in within-subject designs:
+A simpler solution to Loftus and Masson's method.
+<em>Tutorials in Quantitative Methods for Psychology</em>, 1(1), 42&ndash;45.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.20982/tqmp.01.1.p042")}
+</p>
+<p>Morey, R. D. (2008). Confidence intervals from normalized data:
+A correction to Cousineau (2005).
+<em>Tutorials in Quantitative Methods for Psychology</em>, 4(2), 61&ndash;64.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.20982/tqmp.04.2.p061")}
+</p>
+
+</main>
+
+</div>
+</body></html>

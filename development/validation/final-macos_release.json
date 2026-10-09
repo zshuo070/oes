@@ -1,0 +1,18 @@
+{
+  "target": "macos_release",
+  "archive": "/workspace/scratch/4c213f01dace/output/oes_1.0.0.tar.gz",
+  "archive_sha256": "0580abe12189764a36028b7adfe8d4d065d921cbb2327e1f220e3a08b5b3b483",
+  "prepared": "2026-10-08T21:05:34.138116+00:00",
+  "status": "unknown_post_outcome",
+  "post_started": "2026-10-08T21:05:40.162878+00:00",
+  "rflavor": "r-release",
+  "form": "https://mac.r-project.org/macbuilder/submit.html",
+  "post_url": "https://mac.r-project.org/macbuilder/v1/submit",
+  "completed": "2026-10-08T21:05:48.406647+00:00",
+  "exception": "HTTPError: HTTP Error 502: Bad Gateway",
+  "http_status": 502,
+  "response_file": "/workspace/scratch/4c213f01dace/platform_checks/final-receipts/macos_release-error-response.txt",
+  "final_archive_acceptance": "unknown",
+  "retry_performed": false,
+  "retry_note": "No job URL returned with nginx HTTP502. No duplicate POST was attempted."
+}

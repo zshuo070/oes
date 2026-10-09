@@ -1,0 +1,8 @@
+* checking for file ‘/workspace/scratch/4c213f01dace/output/oes/DESCRIPTION’ ... OK
+* preparing ‘oes’:
+* checking DESCRIPTION meta-information ... OK
+* checking for LF line-endings in source and make files and shell scripts
+* checking for empty or unneeded directories
+Removed empty directory ‘oes/tests/testthat/_snaps’
+* building ‘oes_1.0.0.tar.gz’
+

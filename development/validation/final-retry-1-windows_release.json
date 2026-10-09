@@ -1,0 +1,20 @@
+{
+  "target": "windows_release",
+  "archive": "/workspace/scratch/4c213f01dace/output/oes_1.0.0.tar.gz",
+  "archive_sha256": "0580abe12189764a36028b7adfe8d4d065d921cbb2327e1f220e3a08b5b3b483",
+  "prepared": "2026-10-08T21:10:37.641721+00:00",
+  "status": "upload_response_confirmed",
+  "post_started": "2026-10-08T21:10:45.124643+00:00",
+  "rflavor": "R-release",
+  "form": "https://win-builder.r-project.org/upload.aspx",
+  "post_url": "https://win-builder.r-project.org/upload.aspx",
+  "http_status": 200,
+  "response_url": "https://win-builder.r-project.org/upload.aspx",
+  "content_type": "text/html; charset=utf-8",
+  "response_file": "/workspace/scratch/4c213f01dace/platform_checks/final-retry-1-receipts/windows_release-response.html",
+  "completed": "2026-10-08T21:10:51.508179+00:00",
+  "results_delivery": "maintainer email: zshuo070@gmail.com",
+  "note": "Inspect saved HTML to confirm acceptance; HTTP success alone is not a completed check.",
+  "final_archive_accepted": true,
+  "acceptance_evidence": "Release form response lists oes_1.0.0.tar.gz and File Size: 37080 bytes; check results pending maintainer email."
+}

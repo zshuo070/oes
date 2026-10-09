@@ -1,0 +1,42 @@
+Package: oes
+Type: Package
+Title: Optimal Effect-Size-Based Y-Axis Ranges
+Version: 1.0.0
+Authors@R: c(
+    person("Shuo", "Zang", email = "zshuo070@gmail.com",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0009-0000-4387-8145",
+            affiliation = "School of Psychology, University of Ottawa")),
+    person("Denis", "Cousineau", role = c("aut", "cph"),
+        comment = c(affiliation = "School of Psychology, University of Ottawa")))
+Description: Calculates effect-size-informed y-axis recommendations for
+    visualizations of independent, repeated-measures, and mixed designs.
+    Summarizes selected error bars, estimates conditional standardized
+    contrasts, and generalizes range-expansion rules using constants from
+    single-factor, two-level studies of Cohen's d. Recommendations beyond
+    that studied setting have not been empirically validated.
+    Provides numerical results and 'ggplot2' visualizations, including
+    summary plots and preservation of supplied plot layouts.
+    Confidence-interval adjustment options follow the distinctions in
+    Cousineau (2017) <doi:10.5709/acp-0214-z>, including difference
+    adjustment and combined repeated-measures adjustment. Within-subject
+    base intervals use the normalization of Cousineau (2005)
+    <doi:10.20982/tqmp.01.1.p042> with the bias correction of Morey (2008)
+    <doi:10.20982/tqmp.04.2.p061>. Correlation-only intervals and intervals
+    with both adjustments are separate options. These references support
+    confidence-interval construction, not the range-expansion calibration.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    dplyr (>= 1.0.0),
+    ggplot2 (>= 4.0.0),
+    rlang (>= 1.0.0),
+    rstatix (>= 0.7.2),
+    stats,
+    utils
+Suggests:
+    ggsci,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,28 @@
+{
+  "target": "macos_devel",
+  "archive": "/workspace/scratch/4c213f01dace/output/oes_1.0.0.tar.gz",
+  "archive_sha256": "343d77eab4b6899b62b54e14e0cf45cea493744d8a18065703ecc0e8d3a90e88",
+  "prepared": "2026-10-08T20:56:54.021127+00:00",
+  "status": "submitted",
+  "post_started": "2026-10-08T20:57:00.192437+00:00",
+  "rflavor": "r-devel",
+  "form": "https://mac.r-project.org/macbuilder/submit.html",
+  "post_url": "https://mac.r-project.org/macbuilder/v1/submit",
+  "http_status": 200,
+  "response_url": "https://mac.r-project.org/macbuilder/v1/submit",
+  "content_type": "application/json",
+  "response_file": "/workspace/scratch/4c213f01dace/platform_checks/receipts/macos_devel-response.json",
+  "completed": "2026-10-08T20:57:04.640692+00:00",
+  "initial_validation_exception": "ValueError: MacBuilder returned no recognized results URL; inspect saved response.",
+  "results_url": "https://mac.R-project.org/macbuilder/results/1791493024-a968568427698647/",
+  "server_submission": {
+    "submitted": true,
+    "id": "1791493024-a968568427698647",
+    "package": "oes",
+    "version": "1.0.0",
+    "rflavor": "r-devel",
+    "rfw": "4.6",
+    "url": "https://mac.R-project.org/macbuilder/results/1791493024-a968568427698647/"
+  },
+  "postprocessing_note": "Confirmed from saved response; original validator compared host case sensitively. No repeat POST."
+}

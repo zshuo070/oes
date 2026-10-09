@@ -1,0 +1,412 @@
+Hmm ... looks like a package
+Converting Rd files to LaTeX 
+Creating pdf output from LaTeX ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./Rd2.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo))
+(/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/share/texmf/tex/lat
+ex/Rd.sty (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file Rd2.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+No file Rd2.toc.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd) [1{/var/lib/texmf/f
+onts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}] [2]
+Overfull \hbox (66.00032pt too wide) in paragraph at lines 125--128
+\T1/ptm/m/n/10 Zang \T1/pcr/m/n/10 <zshuo070@gmail.com>\T1/ptm/m/n/10 . Shuo Za
+ng's OR-CID: [][]$\T1/pcr/m/n/10 https : / / orcid . org / 0009-[]0000-[]4387-[
+]8145$[][]\T1/ptm/m/n/10 . 
+
+Overfull \hbox (3.50772pt too wide) in paragraph at lines 138--142
+\T1/ptm/m/n/10 and Mas-son's method. \T1/ptm/m/it/10 Tu-to-ri-als in Quan-ti-ta
+-tive Meth-ods for Psy-chol-ogy\T1/ptm/m/n/10 , 1(1), 42--45. [][]doi:10.20982/
+
+
+Overfull \hbox (72.78088pt too wide) in paragraph at lines 162--162
+ []  \T1/pcr/m/n/10 error_bar = c("ci95", "ci95_dif", "ci95_corr", "ci95_dif_co
+rr", "se", "sd"),[] 
+
+Overfull \hbox (0.78088pt too wide) in paragraph at lines 166--166
+ []  \T1/pcr/m/n/10 override_existing_limits = FALSE, verbose = TRUE, detail = 
+FALSE[] 
+[3]
+Overfull \hbox (16.60878pt too wide) in paragraph at lines 187--195
+[]\T1/ptm/m/n/10 One of or-di-nary 95 per-cent CIs ([]\T1/pcr/m/n/10 "ci95"[]\T
+1/ptm/m/n/10 ), difference-adjusted CIs ([]\T1/pcr/m/n/10 "ci95_dif"[]\T1/ptm/m
+/n/10 ),
+
+Overfull \hbox (33.98833pt too wide) in paragraph at lines 195--198
+[]\T1/pcr/m/n/10 "dp" []\T1/ptm/m/n/10 uses error-bar end-points as the base ra
+nge. Ex-ploratory al-ter-na-tives []\T1/pcr/m/n/10 "quantile"
+
+Overfull \hbox (76.07744pt too wide) in paragraph at lines 236--243
+\T1/ptm/m/n/10 subject com-par-isons match ob-ser-va-tions by ID. Between-subje
+ct con-trasts use []\T1/pcr/m/n/10 rstatix::cohens_d(var.equal
+[4]
+Overfull \hbox (6.74896pt too wide) in paragraph at lines 312--317
+\T1/ptm/m/n/10 stud-ied com-par-isons are un-val-i-dated ex-ten-sions. []\T1/pc
+r/m/n/10 range_type = "quantile" []\T1/ptm/m/n/10 and []\T1/pcr/m/n/10 range_ty
+pe
+[5]
+Overfull \hbox (3.50772pt too wide) in paragraph at lines 339--343
+\T1/ptm/m/n/10 and Mas-son's method. \T1/ptm/m/it/10 Tu-to-ri-als in Quan-ti-ta
+-tive Meth-ods for Psy-chol-ogy\T1/ptm/m/n/10 , 1(1), 42--45. [][]doi:10.20982/
+
+No file Rd2.ind.
+[6] (./Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on Rd2.pdf (6 pages, 146652 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.17 [TeX Live 2023] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (5 entries accepted, 1 rejected).
+Sorting entries....done (11 comparisons).
+Generating output file Rd2.ind....done (12 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./Rd2.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo))
+(/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/share/texmf/tex/lat
+ex/Rd.sty (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./Rd2.aux) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (./Rd2.out) (./Rd2.out)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) (./Rd2.toc
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd) [1{/var/lib/texmf/fon
+ts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
+base/8r.enc}] [2]
+Overfull \hbox (66.00032pt too wide) in paragraph at lines 125--128
+\T1/ptm/m/n/10 Zang \T1/pcr/m/n/10 <zshuo070@gmail.com>\T1/ptm/m/n/10 . Shuo Za
+ng's OR-CID: [][]$\T1/pcr/m/n/10 https : / / orcid . org / 0009-[]0000-[]4387-[
+]8145$[][]\T1/ptm/m/n/10 . 
+
+Overfull \hbox (3.50772pt too wide) in paragraph at lines 138--142
+\T1/ptm/m/n/10 and Mas-son's method. \T1/ptm/m/it/10 Tu-to-ri-als in Quan-ti-ta
+-tive Meth-ods for Psy-chol-ogy\T1/ptm/m/n/10 , 1(1), 42--45. [][]doi:10.20982/
+
+
+Overfull \hbox (72.78088pt too wide) in paragraph at lines 162--162
+ []  \T1/pcr/m/n/10 error_bar = c("ci95", "ci95_dif", "ci95_corr", "ci95_dif_co
+rr", "se", "sd"),[] 
+
+Overfull \hbox (0.78088pt too wide) in paragraph at lines 166--166
+ []  \T1/pcr/m/n/10 override_existing_limits = FALSE, verbose = TRUE, detail = 
+FALSE[] 
+[3]
+Overfull \hbox (16.60878pt too wide) in paragraph at lines 187--195
+[]\T1/ptm/m/n/10 One of or-di-nary 95 per-cent CIs ([]\T1/pcr/m/n/10 "ci95"[]\T
+1/ptm/m/n/10 ), difference-adjusted CIs ([]\T1/pcr/m/n/10 "ci95_dif"[]\T1/ptm/m
+/n/10 ),
+
+Overfull \hbox (33.98833pt too wide) in paragraph at lines 195--198
+[]\T1/pcr/m/n/10 "dp" []\T1/ptm/m/n/10 uses error-bar end-points as the base ra
+nge. Ex-ploratory al-ter-na-tives []\T1/pcr/m/n/10 "quantile"
+
+Overfull \hbox (76.07744pt too wide) in paragraph at lines 236--243
+\T1/ptm/m/n/10 subject com-par-isons match ob-ser-va-tions by ID. Between-subje
+ct con-trasts use []\T1/pcr/m/n/10 rstatix::cohens_d(var.equal
+[4]
+Overfull \hbox (6.74896pt too wide) in paragraph at lines 312--317
+\T1/ptm/m/n/10 stud-ied com-par-isons are un-val-i-dated ex-ten-sions. []\T1/pc
+r/m/n/10 range_type = "quantile" []\T1/ptm/m/n/10 and []\T1/pcr/m/n/10 range_ty
+pe
+[5]
+Overfull \hbox (3.50772pt too wide) in paragraph at lines 339--343
+\T1/ptm/m/n/10 and Mas-son's method. \T1/ptm/m/it/10 Tu-to-ri-als in Quan-ti-ta
+-tive Meth-ods for Psy-chol-ogy\T1/ptm/m/n/10 , 1(1), 42--45. [][]doi:10.20982/
+
+(./Rd2.ind [6] [7]) (./Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on Rd2.pdf (7 pages, 148123 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.17 [TeX Live 2023] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (5 entries accepted, 1 rejected).
+Sorting entries....done (11 comparisons).
+Generating output file Rd2.ind....done (12 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./Rd2.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo))
+(/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/share/texmf/tex/lat
+ex/Rd.sty (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./Rd2.aux) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (./Rd2.out) (./Rd2.out)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) (./Rd2.toc
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd)) [1{/var/lib/texmf/
+fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvi
+ps/base/8r.enc}] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+[2]
+Overfull \hbox (66.00032pt too wide) in paragraph at lines 125--128
+\T1/ptm/m/n/10 Zang \T1/pcr/m/n/10 <zshuo070@gmail.com>\T1/ptm/m/n/10 . Shuo Za
+ng's OR-CID: [][]$\T1/pcr/m/n/10 https : / / orcid . org / 0009-[]0000-[]4387-[
+]8145$[][]\T1/ptm/m/n/10 . 
+
+Overfull \hbox (3.50772pt too wide) in paragraph at lines 138--142
+\T1/ptm/m/n/10 and Mas-son's method. \T1/ptm/m/it/10 Tu-to-ri-als in Quan-ti-ta
+-tive Meth-ods for Psy-chol-ogy\T1/ptm/m/n/10 , 1(1), 42--45. [][]doi:10.20982/
+
+
+Overfull \hbox (72.78088pt too wide) in paragraph at lines 162--162
+ []  \T1/pcr/m/n/10 error_bar = c("ci95", "ci95_dif", "ci95_corr", "ci95_dif_co
+rr", "se", "sd"),[] 
+
+Overfull \hbox (0.78088pt too wide) in paragraph at lines 166--166
+ []  \T1/pcr/m/n/10 override_existing_limits = FALSE, verbose = TRUE, detail = 
+FALSE[] 
+[3]
+Overfull \hbox (16.60878pt too wide) in paragraph at lines 187--195
+[]\T1/ptm/m/n/10 One of or-di-nary 95 per-cent CIs ([]\T1/pcr/m/n/10 "ci95"[]\T
+1/ptm/m/n/10 ), difference-adjusted CIs ([]\T1/pcr/m/n/10 "ci95_dif"[]\T1/ptm/m
+/n/10 ),
+
+Overfull \hbox (33.98833pt too wide) in paragraph at lines 195--198
+[]\T1/pcr/m/n/10 "dp" []\T1/ptm/m/n/10 uses error-bar end-points as the base ra
+nge. Ex-ploratory al-ter-na-tives []\T1/pcr/m/n/10 "quantile"
+
+Overfull \hbox (76.07744pt too wide) in paragraph at lines 236--243
+\T1/ptm/m/n/10 subject com-par-isons match ob-ser-va-tions by ID. Between-subje
+ct con-trasts use []\T1/pcr/m/n/10 rstatix::cohens_d(var.equal
+[4]
+Overfull \hbox (6.74896pt too wide) in paragraph at lines 312--317
+\T1/ptm/m/n/10 stud-ied com-par-isons are un-val-i-dated ex-ten-sions. []\T1/pc
+r/m/n/10 range_type = "quantile" []\T1/ptm/m/n/10 and []\T1/pcr/m/n/10 range_ty
+pe
+[5]
+Overfull \hbox (3.50772pt too wide) in paragraph at lines 339--343
+\T1/ptm/m/n/10 and Mas-son's method. \T1/ptm/m/it/10 Tu-to-ri-als in Quan-ti-ta
+-tive Meth-ods for Psy-chol-ogy\T1/ptm/m/n/10 , 1(1), 42--45. [][]doi:10.20982/
+
+(./Rd2.ind [6] [7]) (./Rd2.aux) )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on Rd2.pdf (7 pages, 148330 bytes).
+Transcript written on Rd2.log.
+Saving output to ‘/workspace/scratch/4c213f01dace/qa/steps1-6-recheck/oes-reference-manual.pdf’ ...
+Done

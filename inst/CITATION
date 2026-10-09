@@ -1,0 +1,23 @@
+# Citation for the first public oes release, based on the V1.8 implementation.
+# R supplies installed package metadata in `meta` when citation("oes") runs.
+# Update the year when preparing a later release; version follows DESCRIPTION.
+
+package_version <- if (exists("meta", inherits = FALSE) &&
+                       !is.null(meta$Version)) {
+  meta$Version
+} else {
+  "1.0.0"
+}
+
+bibentry(
+  bibtype = "Manual",
+  key = "oes",
+  title = "oes: Optimal Effect-Size-Based Y-Axis Ranges",
+  author = c(
+    person("Shuo", "Zang",
+           comment = c(ORCID = "0009-0000-4387-8145")),
+    person("Denis", "Cousineau")
+  ),
+  year = "2026",
+  note = paste("R package version", package_version)
+)

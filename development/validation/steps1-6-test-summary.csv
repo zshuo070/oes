@@ -1,0 +1,31 @@
+"file","context","test","nb","failed","skipped","error","warning","user","system","real","passed"
+"test-effect-sizes.R","effect-sizes","independent d and g agree with manual standardized contrasts",13,0,FALSE,FALSE,0,0.981,0.026,1.008,13
+"test-effect-sizes.R","effect-sizes","unequal groups retain the unweighted two-variance denominator",1,0,FALSE,FALSE,0,0.151999999999999,0.013,0.164,1
+"test-effect-sizes.R","effect-sizes","paired contrasts match participants by ID rather than row order",10,0,FALSE,FALSE,0,0.269,0.048,0.317,10
+"test-effect-sizes.R","effect-sizes","NULL forwarding and unusual variable names retain numerical results",11,0,FALSE,FALSE,0,0.371,0.00700000000000001,0.378,11
+"test-error-bars.R","error-bars","ordinary error bars agree with manually calculated widths",24,0,FALSE,FALSE,0,1.446,0.038,1.485,24
+"test-error-bars.R","error-bars","Cousineau-Morey intervals use participant df under either pooling choice",10,0,FALSE,FALSE,0,0.425,0.003,0.427999999999999,10
+"test-error-bars.R","error-bars","all six methods retain the single ER variability scale when pooling changes",75,0,FALSE,FALSE,0,4.728,0.02,4.767,75
+"test-error-bars.R","error-bars","duplicate participant-cell rows are averaged for CM intervals",4,0,FALSE,FALSE,0,0.151999999999999,0.004,0.155999999999999,4
+"test-inputs-and-ranges.R","inputs-and-ranges","invalid inputs give specific errors",10,0,FALSE,FALSE,0,0.0739999999999998,0,0.0730000000000004,10
+"test-inputs-and-ranges.R","inputs-and-ranges","missing IDs and small effects use the supplied fallback range",9,0,FALSE,FALSE,0,0.0860000000000003,0,0.0869999999999997,9
+"test-inputs-and-ranges.R","inputs-and-ranges","CM requires complete repeated profiles and multiple participants",6,0,FALSE,FALSE,0,0.108000000000001,0.00700000000000001,0.115,6
+"test-inputs-and-ranges.R","inputs-and-ranges","summary data supply intervals without fabricating participant effects",14,0,FALSE,FALSE,0,0.132,0,0.131,14
+"test-inputs-and-ranges.R","inputs-and-ranges","alternative base ranges and calibrated ER give expected limits",5,0,FALSE,FALSE,0,0.218999999999999,0.00900000000000001,0.229000000000001,5
+"test-inputs-and-ranges.R","inputs-and-ranges","prescribed contrasts exercise fallback and all three ER constants",18,0,FALSE,FALSE,0,0.449999999999999,0.00700000000000001,0.457000000000001,18
+"test-multilevel-oracles.R","multilevel-oracles","multilevel effects select the largest conditional contrast",8,0,FALSE,FALSE,0,0.673,0.00999999999999995,0.682,8
+"test-multilevel-oracles.R","multilevel-oracles","three-condition CM widths agree with matrix normalization",40,0,FALSE,FALSE,0,1.582,0.043,1.625,40
+"test-plot-fallbacks.R","plot-fallbacks","plot-only fallbacks honor and validate measurement ranges",16,0,FALSE,FALSE,0,0.884,0,0.884,16
+"test-plot-fallbacks.R","plot-fallbacks","original-layout override restores observations censored by scale limits",14,0,FALSE,FALSE,0,0.757999999999999,0,0.757999999999999,14
+"test-plot-fallbacks.R","plot-fallbacks","unresolved plot-only calls retain the original plot despite override",3,0,FALSE,FALSE,0,0.309000000000001,0.005,0.314,3
+"test-plot-layouts.R","plot-layouts","plot-only calls extract global, layer, and faceted raw data",26,0,FALSE,FALSE,0,7.421,0,7.426,26
+"test-plot-layouts.R","plot-layouts","fill-only summaries retain separate coloured and aligned series",36,0,FALSE,FALSE,0,1.823,0.021,1.844,36
+"test-plot-layouts.R","plot-layouts","shape, colour-shape, and linetype series are grouped independently",33,0,FALSE,FALSE,0,3.668,0,3.668,33
+"test-plot-layouts.R","plot-layouts","numerical OES limits match both plot layouts without vertical padding",10,0,FALSE,FALSE,0,0.449999999999999,0,0.450000000000003,10
+"test-plot-layouts.R","plot-layouts","existing coordinate and scale limits are retained or explicitly replaced",6,0,FALSE,FALSE,0,0.507000000000001,0,0.506999999999998,6
+"test-plot-layouts.R","plot-layouts","summary plots require raw data for X and can recover it explicitly",10,0,FALSE,FALSE,0,0.413,0,0.414000000000001,10
+"test-public-api.R","public-api","optimal_graph is the sole export and the numerical engine is internal",5,0,FALSE,FALSE,0,0.0259999999999962,0,0.0269999999999939,5
+"test-public-api.R","public-api","public detailed independent and paired graphs retain manual effects",17,0,FALSE,FALSE,0,0.414999999999999,0.003,0.417999999999999,17
+"test-public-api.R","public-api","public detailed mixed graphs retain the internal numerical result",13,0,FALSE,FALSE,0,0.641999999999996,0,0.642000000000003,13
+"test-supplied-examples.R","supplied-examples","built-in mpg examples use genuinely two-level driving factors",10,0,FALSE,FALSE,0,0.905000000000001,0.012,0.917000000000002,10
+"test-supplied-examples.R","supplied-examples","ToothGrowth and PlantGrowth examples preserve explicit data choices",8,0,FALSE,FALSE,0,0.679000000000002,0,0.68,8

@@ -1,0 +1,306 @@
+<!DOCTYPE html><html><head><title>R: Plot or Describe an Effect-Size-Based Y-Axis Recommendation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script>
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>optimal_graph</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Plot or Describe an Effect-Size-Based Y-Axis Recommendation</h2>
+
+<h3>Description</h3>
+
+<p>Create a mean and error-bar plot, apply recommended y-axis limits to an
+existing ggplot, or return a text description of the recommendation.
+Broader factorial and repeated-measures uses generalize an empirical
+calibration of single-factor, two-level comparisons.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>optimal_graph(
+  plot = NULL, data = NULL, DV = NULL,
+  layout = c("summary", "original"), pooled = TRUE,
+  error_bar = c("ci95", "ci95_dif", "ci95_corr", "ci95_dif_corr", "se", "sd"),
+  range_type = c("dp", "quantile", "data"), id = NULL,
+  within = NULL, between = NULL, effect = c("d", "g"),
+  measurement_range = NULL, output = c("graph", "y_axis_limit"),
+  override_existing_limits = FALSE, verbose = TRUE, detail = FALSE
+)
+</code></pre>
+
+
+<h3>Arguments</h3>
+
+<table role = "presentation">
+<tr><td><code id="plot">plot</code></td>
+<td>
+<p>Optional ggplot object. If <code>data</code> and <code>DV</code> are also
+supplied, they drive calculations and the plot supplies the graphical
+layout. Otherwise accessible source data and mapped columns are used.</p>
+</td></tr>
+<tr><td><code id="data">data</code></td>
+<td>
+<p>Optional data frame of raw responses, or one row per design
+cell. For summary input, <code>DV</code> identifies the cell mean; optional
+<code>n</code>, <code>sd</code>, and <code>se</code> columns describe cell variability.
+Raw data are required to estimate the maximum effect in this version.</p>
+</td></tr>
+<tr><td><code id="DV">DV</code></td>
+<td>
+<p>Response column, as a bare name or character string. Required
+with explicit <code>data</code>; otherwise inferred from the plot y mapping.</p>
+</td></tr>
+<tr><td><code id="layout">layout</code></td>
+<td>
+<p><code>"summary"</code> rebuilds a mean and error-bar plot;
+<code>"original"</code> retains the supplied plot layers. Without a supplied
+plot, a summary plot is produced for either choice.</p>
+</td></tr>
+<tr><td><code id="pooled">pooled</code></td>
+<td>
+<p>Whether error bars use pooled variability. OES expansion
+always uses a single pooled SD, regardless of this setting.</p>
+</td></tr>
+<tr><td><code id="error_bar">error_bar</code></td>
+<td>
+<p>One of ordinary 95 percent CIs (<code>"ci95"</code>),
+difference-adjusted CIs (<code>"ci95_dif"</code>), Cousineau&ndash;Morey CIs
+without the difference multiplier (<code>"ci95_corr"</code>), both
+adjustments (<code>"ci95_dif_corr"</code>),
+one standard error (<code>"se"</code>), or one standard deviation
+(<code>"sd"</code>). Difference adjustment multiplies half-widths by
+<code class="reqn">\sqrt{2}</code>. Correlation-adjusted methods require raw data,
+within-subject factors, and valid participant IDs.</p>
+</td></tr>
+<tr><td><code id="range_type">range_type</code></td>
+<td>
+<p><code>"dp"</code> uses error-bar endpoints as the base
+range. Exploratory alternatives <code>"quantile"</code> and <code>"data"</code>
+use the 2nd&ndash;98th percentile or measurement/observed range.</p>
+</td></tr>
+<tr><td><code id="id">id</code></td>
+<td>
+<p>Participant ID column, as a bare name or character string.
+Required for paired effects and correlation-adjusted intervals.</p>
+</td></tr>
+<tr><td><code id="within">within</code></td>
+<td>
+<p>Within-subject factor names, as bare names or a character
+vector, with <code>c(...)</code> for multiple factors. Default <code>NULL</code>.</p>
+</td></tr>
+<tr><td><code id="between">between</code></td>
+<td>
+<p>Between-subject factor names, using the same syntax.
+If neither design argument is supplied, eligible categorical data
+columns or detected plot factors are treated as between-subject factors.</p>
+</td></tr>
+<tr><td><code id="effect">effect</code></td>
+<td>
+<p><code>"d"</code> for between-subject Cohen's d and paired
+within-subject dz. Exploratory <code>"g"</code> applies Hedges' correction
+to between-subject contrasts only. Neither g-based nor paired dz-based
+recommendations have been empirically validated; see the evidence and limitations section.</p>
+</td></tr>
+<tr><td><code id="measurement_range">measurement_range</code></td>
+<td>
+<p>Optional numeric <code>c(min, max)</code> giving
+finite, strictly increasing theoretical bounds. Used for the
+<code>"data"</code> base range and fallback; otherwise the observed response
+range is used. This is not a clipping restriction.</p>
+</td></tr>
+<tr><td><code id="output">output</code></td>
+<td>
+<p><code>"graph"</code> returns a plot; <code>"y_axis_limit"</code>
+returns a character string describing calculations and limits.</p>
+</td></tr>
+<tr><td><code id="override_existing_limits">override_existing_limits</code></td>
+<td>
+<p>Whether to replace explicit y-axis
+limits already present in <code>plot</code>. With the default <code>FALSE</code>,
+a supplied plot with explicit limits is retained, even when a summary
+layout was requested. With <code>TRUE</code>, the recommended limits replace
+existing limits. For original-layout output, existing y-scale limits
+are cleared before the recommended coordinate limits are applied; the
+rest of the scale configuration is preserved and the supplied graph
+is unmodified. Text output still reports the recommendation.</p>
+</td></tr>
+<tr><td><code id="verbose">verbose</code></td>
+<td>
+<p>Whether to emit optional OES messages and warnings.
+Errors and all underlying ggplot warnings are not suppressed.</p>
+</td></tr>
+<tr><td><code id="detail">detail</code></td>
+<td>
+<p>For graph output, return a list containing the plot and
+calculation details rather than the plot alone. Does not change the
+character return type of <code>output = "y_axis_limit"</code>.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Always specify <code>within</code>, <code>between</code>, and <code>id</code> for repeated
+measurements or mixed designs: plot aesthetics cannot establish whether
+measurements come from the same participant.
+</p>
+<p>The effect search compares levels of each factor while conditioning on
+the other factors. Within-subject comparisons match observations by ID.
+Between-subject contrasts use <code>rstatix::cohens_d(var.equal = FALSE)</code>,
+with denominator <code class="reqn">\sqrt{(s_1^2 + s_2^2)/2}</code> even when group sample
+sizes differ, rather than an n-weighted two-group SD. Hedges' g uses
+rstatix's implemented correction. This contrast denominator is separate
+from the degrees-of-freedom-weighted pooled cell SD used for ER variability.
+</p>
+<p>For maximum absolute effect <code class="reqn">X \geq 0.20</code>, each side of the base range
+is expanded by <code class="reqn">ER = s_p/(X + a)</code>. Here <code class="reqn">s_p</code> is pooled
+within-cell SD for ordinary error bars or pooled transformed SD for
+Cousineau&ndash;Morey intervals. This variability scale is pooled for both
+values of <code>pooled</code>. If <code class="reqn">X</code> is unavailable or smaller than 0.20,
+the measurement or observed range is returned directly.
+</p>
+<p>Correlation-adjusted intervals require raw data, valid participant IDs,
+at least one within-subject factor, at least two repeated-measures
+conditions per between-subject stratum, complete within-participant
+condition profiles, and at least two participants per stratum.
+Duplicate participant-condition responses are averaged first. The t
+critical value uses <code class="reqn">n - 1</code> degrees of freedom for both pooling settings.
+Confidence-interval options follow the distinctions in Cousineau (2017).
+Difference adjustment multiplies half-widths by <code class="reqn">\sqrt{2}</code>
+(Equation 3). Repeated-measures base intervals use Cousineau's (2005)
+normalization and Morey's (2008) bias correction. The separate
+<code>"ci95_corr"</code> option returns these base intervals without
+<code class="reqn">\sqrt{2}</code> and is not the 2017 article's combined comparative
+construction. <code>"ci95_dif_corr"</code> adds <code class="reqn">\sqrt{2}</code>, combining
+the adjustments described in Equation 5b. <code>"se"</code> and
+<code>"sd"</code> use one standard error or standard deviation.
+These sources support CI construction; the OES expansion rule and
+calibration constants come from the effect-size manuscript.
+</p>
+<p>Summary output uses mapped colour, fill, shape, and linetype to separate
+series, with an explicit group mapping taking priority. Fill supplies
+visible colours when colour is absent. Summary output rebuilds layers
+and does not preserve every styling choice in the original plot.
+</p>
+<p>Graph output requires ggplot2 version 4.0.0 or later. Missing or
+means-only plot source data cannot establish an OES effect size. The
+function warns and may return the original plot or an observed-range
+fallback. Supply explicit raw data and design arguments in those cases.
+</p>
+
+
+<h3>Value</h3>
+
+<p>For <code>output = "graph"</code> and <code>detail = FALSE</code>, a ggplot object.
+With <code>detail = TRUE</code>, a list with <code>plot</code> and <code>oes</code>;
+<code>oes</code> is a list of class <code>oes_result</code>, or <code>NULL</code> when a
+recommendation cannot be calculated from the plot. Its fields are
+<code>range</code> (a one-row data frame with <code>lower</code> and <code>upper</code>),
+<code>res</code> (cell summaries and error bars), <code>dp</code> (maximum absolute
+effect), <code>effect_info</code>, <code>effect_table</code> (conditional comparisons),
+<code>pooled_sd</code>, <code>ER</code>, <code>sd_info</code>, <code>error_bar_info</code>,
+<code>range_info</code>, <code>L</code>, <code>U</code>, and <code>args</code>. On fallback,
+<code>ER</code> is <code>NA</code> and <code>L</code>/<code>U</code> are the final fallback
+bounds; otherwise they are the base bounds before expansion.
+<code>range_info$calibrated</code> is <code>TRUE</code> exactly when
+<code>range_type = "dp"</code>, including on fallback. It identifies the
+original base-range choice, not empirical validity of a generalized
+design, effect estimator, or recommendation.
+</p>
+<p>For <code>output = "y_axis_limit"</code>, a character string, regardless
+of <code>detail</code>. Numerical metadata are accessed through the
+<code>oes</code> component of <code>optimal_graph(..., detail = TRUE)</code> with
+graph output; the underlying numerical helper is not exported.
+</p>
+
+
+<h3>Evidence and limitations</h3>
+
+<p><em>Visualizing Standardized Effect Sizes Using the Framework of Graph Perception and Data Visualization</em>
+(Shuo Zang and Denis Cousineau, 2026, unpublished manuscript) examined
+single-factor, two-level
+comparisons across different populations and sample sizes, focusing on
+Cohen's d. Support for broader independent, repeated-measures, and mixed
+factorial designs is computational; it does not establish the empirical
+validity of the generalized recommendations.
+</p>
+<p>Hedges' g, paired dz, multi-factor maximum-effect selection, and generalized
+ER use beyond the studied comparisons are unvalidated extensions.
+<code>range_type = "quantile"</code> and <code>range_type = "data"</code> are
+exploratory alternatives. The default settings do not remove these design
+limitations.
+</p>
+<p>The parameter <code class="reqn">a</code> in <code class="reqn">ER = s_p/(X + a)</code> is taken directly from
+the effect-size study: 5.723 for <code class="reqn">X \geq 0.8</code>, 1.575 for
+<code class="reqn">0.5 \leq X &lt; 0.8</code>, and 0.254 for <code class="reqn">0.2 \leq X &lt; 0.5</code>.
+These constants may change in later versions with further evidence.
+Text mentioning &ldquo;calibrated OES expansion&rdquo; identifies the inherited
+formula and constants, not empirical validation of all designs or estimators.
+A separate methods paper explaining the derivation from the effect-size study is
+planned but is not yet published.
+</p>
+
+
+<h3>References</h3>
+
+<p>Zang, S., and Cousineau, D. (2026).
+<em>Visualizing Standardized Effect Sizes Using the Framework of Graph Perception and Data Visualization</em>. Unpublished manuscript.
+The associated OSF resource (Zang and Cousineau, 2025) is licensed under
+CC BY 4.0: \Sexpr[results=rd]{tools:::Rd_expr_doi("10.17605/OSF.IO/DRCTA")}. This is the resource DOI,
+not a published-paper or software DOI.
+</p>
+<p>Cousineau, D. (2017). Varieties of confidence intervals.
+<em>Advances in Cognitive Psychology</em>, 13(2), 140&ndash;155.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.5709/acp-0214-z")}
+</p>
+<p>Cousineau, D. (2005). Confidence intervals in within-subject designs:
+A simpler solution to Loftus and Masson's method.
+<em>Tutorials in Quantitative Methods for Psychology</em>, 1(1), 42&ndash;45.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.20982/tqmp.01.1.p042")}
+</p>
+<p>Morey, R. D. (2008). Confidence intervals from normalized data:
+A correction to Cousineau (2005).
+<em>Tutorials in Quantitative Methods for Psychology</em>, 4(2), 61&ndash;64.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.20982/tqmp.04.2.p061")}
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>oes-package</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>dat &lt;- data.frame(
+  group = factor(rep(c("A", "B"), each = 6)),
+  score = c(1, 2, 3, 2, 3, 4, 5, 6, 7, 6, 7, 8)
+)
+optimal_graph(data = dat, DV = score, between = group)
+optimal_graph(data = dat, DV = score, between = group,
+              output = "y_axis_limit")
+result &lt;- optimal_graph(data = dat, DV = score, between = group,
+                        detail = TRUE)
+result$oes$range
+result$oes$effect_table
+p &lt;- ggplot2::ggplot(dat, ggplot2::aes(group, score, fill = group)) +
+  ggplot2::geom_boxplot()
+optimal_graph(p, layout = "original")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

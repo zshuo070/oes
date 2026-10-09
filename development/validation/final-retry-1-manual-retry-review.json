@@ -1,0 +1,4 @@
+{
+  "manual_retry_of": "/workspace/scratch/4c213f01dace/platform_checks/final-receipts/macos_release.json",
+  "root_review": "One explicit diagnostic retry authorized after healthy official status; initial HTTP502 receipt preserved."
+}

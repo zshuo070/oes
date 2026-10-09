@@ -1,0 +1,6 @@
+{
+  "read_at": "2026-10-08T21:08:06.643750+00:00",
+  "source_url": "https://mac.r-project.org/reports/status.html",
+  "submission_service_healthy": true,
+  "status_text": "Caladan (MacBuilder) Webserver: OK Submission service: OK arch arm64 os macOS 26.6 (25G72) model Mac mini cpu Apple M1 locale en_NZ.UTF-8 sdk macOS 26.2 cc clang-1700.6.3.2 fc GNU Fortran (GCC) 14.2.0 Date of report: 2026-10-08 16:00:17 CDT "
+}

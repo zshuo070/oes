@@ -1,0 +1,30 @@
+Both pre-recheck plot defects reproduced.
+effect-sizes: ...................................
+error-bars: .................................................................................................................
+inputs-and-ranges: ..............................................................
+multilevel-oracles: ................................................
+plot-fallbacks: .................................
+plot-layouts: .........................................................................................................................
+public-api: ...................................
+supplied-examples: ..................
+
+══ DONE ════════════════════════════════════════════════════════════════════════
+TEST TOTALS: 30 cases; 465 passed assertions; 0 failures; 0 errors; 0 warnings; 0 skips.
+[1] "Maximum effect size X = 2.323 (Cohen's d).\nMaximum contrast: group: G1 vs G2, conditional on condition = C1.\n\nError bars: correlation-adjusted 95% CIs of the means (Cousineau-Morey).\nError-bar variability: pooled Cousineau-Morey transformed SD (`pooled = TRUE`).\nRepeated-measures conditions J = 3.\nSD used for OES expansion: pooled Cousineau-Morey transformed SD = 0.487.\nBase range (outer limits of the selected error bars): L = 5.226, U = 9.885.\nOES expansion: ER = 0.060.\n\nRecommended y-axis limits: lower = 5.166, upper = 9.946.\nRange method: calibrated OES (`range_type = \"dp\"`)."
+     lower    upper
+1 2.129752 6.014692
+Maximum effect size X = 2.118 (paired Cohen's dz).
+Maximum contrast: EB: EB2 vs EB4, conditional on distortion = LGDI2.
+
+Error bars: correlation-adjusted 95% CIs of the means (Cousineau-Morey).
+Error-bar variability: pooled Cousineau-Morey transformed SD (`pooled = TRUE`).
+Repeated-measures conditions J = 8.
+SD used for OES expansion: pooled Cousineau-Morey transformed SD = 0.715.
+Base range (outer limits of the selected error bars): L = 2.221, U = 5.924.
+OES expansion: ER = 0.091.
+
+Recommended y-axis limits: lower = 2.130, upper = 6.015.
+Range method: calibrated OES (`range_type = "dp"`). 
+null device 
+          1 
+All Rd files parsed/rendered; help/guide/Study4B examples passed.

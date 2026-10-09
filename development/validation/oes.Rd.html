@@ -1,0 +1,247 @@
+<!DOCTYPE html><html><head><title>R: Internal Calculation Helper for Effect-Size-Based Y-Axis...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script>
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>oes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Internal Calculation Helper for Effect-Size-Based Y-Axis Ranges</h2>
+
+<h3>Description</h3>
+
+<p>Internal, unexported calculation helper used by <code>optimal_graph</code>.
+Users should call <code>optimal_graph(detail = TRUE)</code> and inspect the
+returned <code>oes</code> component for numerical limits and metadata.
+Compute an Optimal Effect Size (OES) y-axis recommendation from a factorial
+design, with optional calculation details. The implementation uses constants
+from a single-factor, two-level empirical calibration; broader factorial
+and repeated-measures applications are computational generalizations.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>oes(
+  data, DV, within = NULL, between = NULL, pooled = TRUE,
+  error_bar = c("ci95", "ci95_dif", "ci95_corr", "ci95_dif_corr", "se", "sd"),
+  range_type = c("dp", "quantile", "data"), id = NULL,
+  effect = c("d", "g"), measurement_range = NULL,
+  verbose = TRUE, detail = FALSE
+)
+</code></pre>
+
+
+<h3>Arguments</h3>
+
+<table role = "presentation">
+<tr><td><code id="data">data</code></td>
+<td>
+<p>A data frame of raw responses, or one row per design cell.
+For summary input, <code>DV</code> identifies the cell mean; optional
+<code>n</code>, <code>sd</code>, and <code>se</code> columns describe cell variability.
+Raw data are required to estimate the maximum effect in this version.</p>
+</td></tr>
+<tr><td><code id="DV">DV</code></td>
+<td>
+<p>Response column, supplied as a bare name or character string.</p>
+</td></tr>
+<tr><td><code id="within">within</code></td>
+<td>
+<p>Within-subject factor names, as bare names or a character
+vector. Use <code>c(...)</code> for multiple factors. Default <code>NULL</code>.</p>
+</td></tr>
+<tr><td><code id="between">between</code></td>
+<td>
+<p>Between-subject factor names, with the same syntax as
+<code>within</code>. At least one factor must be supplied.</p>
+</td></tr>
+<tr><td><code id="pooled">pooled</code></td>
+<td>
+<p>Whether error bars use pooled rather than cell-specific
+variability. The OES expansion always uses a single pooled variability
+estimate, regardless of this argument.</p>
+</td></tr>
+<tr><td><code id="error_bar">error_bar</code></td>
+<td>
+<p>Error-bar method. <code>"ci95"</code> uses ordinary 95 percent
+confidence intervals; <code>"ci95_dif"</code> multiplies their half-widths by
+<code class="reqn">\sqrt{2}</code>. <code>"ci95_corr"</code> uses Cousineau&ndash;Morey
+correlation-adjusted base intervals without <code class="reqn">\sqrt{2}</code>;
+<code>"ci95_dif_corr"</code> also applies the
+<code class="reqn">\sqrt{2}</code> multiplier. <code>"se"</code> and <code>"sd"</code> use one standard
+error and one standard deviation, respectively.</p>
+</td></tr>
+<tr><td><code id="range_type">range_type</code></td>
+<td>
+<p>Base range before expansion: <code>"dp"</code> uses the
+outer error-bar endpoints; <code>"quantile"</code> uses the 2nd and 98th
+response percentiles; <code>"data"</code> uses the measurement or observed
+response range. The latter two choices are exploratory.</p>
+</td></tr>
+<tr><td><code id="id">id</code></td>
+<td>
+<p>Participant ID column, as a bare name or character string.
+Required for paired within-subject effects and correlation-adjusted CIs.</p>
+</td></tr>
+<tr><td><code id="effect">effect</code></td>
+<td>
+<p><code>"d"</code> uses Cohen's d for between-subject contrasts
+and paired Cohen's dz for within-subject contrasts. <code>"g"</code> applies
+Hedges' correction to between-subject contrasts only; within-subject
+contrasts still use dz. Recommendations using g or paired dz have not
+been empirically validated; see the evidence and limitations section.</p>
+</td></tr>
+<tr><td><code id="measurement_range">measurement_range</code></td>
+<td>
+<p>Optional numeric vector <code>c(min, max)</code>
+giving a finite, strictly increasing theoretical response range.
+Otherwise the observed range is used. This supplies the <code>"data"</code>
+base range and the fallback range. It does not clamp OES recommendations.</p>
+</td></tr>
+<tr><td><code id="verbose">verbose</code></td>
+<td>
+<p>Whether to emit optional methodological and fallback
+warnings. Errors are not suppressed.</p>
+</td></tr>
+<tr><td><code id="detail">detail</code></td>
+<td>
+<p>If <code>FALSE</code>, return limits only. If <code>TRUE</code>, return
+calculation details in an object of class <code>oes_result</code>.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>The effect search compares levels of each factor while conditioning on the
+other factors. Within-subject comparisons match observations by participant
+ID. Specify the experimental design explicitly; grouping variables alone
+do not identify repeated measurements.
+</p>
+<p>Between-subject contrasts use <code>rstatix::cohens_d(var.equal = FALSE)</code>.
+Their standardized mean difference divides by
+<code class="reqn">\sqrt{(s_1^2 + s_2^2)/2}</code>, even when group sample sizes differ; it
+does not use an n-weighted two-group SD. Hedges' g uses the correction
+implemented by rstatix. This contrast denominator is separate from the
+degrees-of-freedom-weighted pooled cell SD used for ER variability.
+</p>
+<p>For maximum absolute effect <code class="reqn">X \geq 0.20</code>, the expansion on each side
+is <code class="reqn">ER = s_p/(X + a)</code>, where <code class="reqn">s_p</code> is pooled within-cell SD for
+ordinary error bars or pooled transformed SD for Cousineau&ndash;Morey intervals.
+The parameter <code class="reqn">a</code> uses the inherited calibration constants described
+below: 5.723 for <code class="reqn">X \geq 0.8</code>, 1.575 for
+<code class="reqn">0.5 \leq X &lt; 0.8</code>, and 0.254 for <code class="reqn">0.2 \leq X &lt; 0.5</code>.
+These values are retained in this version and may change in later versions
+as further evidence becomes available.
+If <code class="reqn">X</code> is unavailable or smaller than 0.20, the measurement or observed
+range is returned directly. The default <code>range_type = "dp"</code> and
+<code>effect = "d"</code> retain the calibration's method choices; selecting
+them does not establish empirical validity for every supported design.
+The output phrase &ldquo;calibrated OES expansion&rdquo; refers to use of the inherited
+formula and constants, not to empirical validation of all supported designs
+or effect estimators.
+</p>
+<p>Correlation-adjusted intervals require raw data, valid participant IDs, at
+least one within-subject factor, at least two repeated-measures conditions
+per between-subject stratum, complete within-participant condition profiles,
+and at least two participants per stratum.
+Duplicate participant-condition responses are averaged first. Their t
+critical value uses <code class="reqn">n - 1</code> degrees of freedom for both pooling settings.
+Confidence-interval options follow the distinctions in Cousineau (2017).
+Difference adjustment multiplies half-widths by <code class="reqn">\sqrt{2}</code>
+(Equation 3). Repeated-measures base intervals use Cousineau's (2005)
+normalization and Morey's (2008) bias correction. The separate
+<code>"ci95_corr"</code> option returns these base intervals without
+<code class="reqn">\sqrt{2}</code> and is not the 2017 article's combined comparative
+construction. <code>"ci95_dif_corr"</code> adds <code class="reqn">\sqrt{2}</code>, combining
+the adjustments described in Equation 5b. <code>"se"</code> and
+<code>"sd"</code> use one standard error or standard deviation.
+These sources support CI construction; the OES expansion rule and
+calibration constants come from the effect-size manuscript.
+</p>
+
+
+<h3>Value</h3>
+
+<p>With <code>detail = FALSE</code>, a one-row data frame with <code>lower</code> and
+<code>upper</code>. With <code>detail = TRUE</code>, a list of class <code>oes_result</code>
+containing <code>range</code> (that data frame), <code>res</code> (cell summaries and
+error bars), <code>dp</code> (maximum absolute effect), <code>effect_info</code>,
+<code>effect_table</code> (conditional comparisons), <code>pooled_sd</code>,
+<code>ER</code>, <code>sd_info</code>, <code>error_bar_info</code>, <code>range_info</code>,
+<code>L</code>, <code>U</code>, and <code>args</code>. On fallback, <code>ER</code> is <code>NA</code>
+and <code>L</code>/<code>U</code> are the final fallback bounds; otherwise they are
+the base bounds before expansion.
+The <code>range_info$calibrated</code> flag is <code>TRUE</code> exactly when
+<code>range_type = "dp"</code>, including on fallback. It identifies the
+original base-range choice, not empirical validation of a generalized
+design, effect estimator, or recommendation.
+</p>
+
+
+<h3>Evidence and limitations</h3>
+
+<p><em>Visualizing Standardized Effect Sizes Using the Framework of Graph Perception and Data Visualization</em>
+(Shuo Zang and Denis Cousineau, 2026, unpublished manuscript) studied
+single-factor, two-level
+comparisons across different populations and sample sizes, focusing on
+Cohen's d. The package's support for broader independent, repeated-measures,
+and mixed factorial designs is a computational generalization of that work,
+not empirical validation of those generalized y-axis recommendations.
+</p>
+<p>Recommendations using Hedges' g, paired Cohen's dz, multi-factor
+maximum-effect selection, or the generalized ER rule beyond the studied
+comparisons remain unvalidated extensions. Alternative base ranges
+<code>"quantile"</code> and <code>"data"</code> are also exploratory.
+Software tests verify implemented calculations and behavior; they do not
+validate perceptual outcomes for these extensions.
+</p>
+<p>A separate methods paper is planned to explain the package's derivation
+from the effect-size study. The planned methods paper is not yet published,
+and no bibliographic citation for it is included here.
+</p>
+
+
+<h3>References</h3>
+
+<p>Zang, S., and Cousineau, D. (2026).
+<em>Visualizing Standardized Effect Sizes Using the Framework of Graph Perception and Data Visualization</em>. Unpublished manuscript.
+The associated OSF resource (Zang and Cousineau, 2025) is licensed under
+CC BY 4.0: \Sexpr[results=rd]{tools:::Rd_expr_doi("10.17605/OSF.IO/DRCTA")}. This is the resource DOI,
+not a published-paper or software DOI.
+</p>
+<p>Cousineau, D. (2017). Varieties of confidence intervals.
+<em>Advances in Cognitive Psychology</em>, 13(2), 140&ndash;155.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.5709/acp-0214-z")}
+</p>
+<p>Cousineau, D. (2005). Confidence intervals in within-subject designs:
+A simpler solution to Loftus and Masson's method.
+<em>Tutorials in Quantitative Methods for Psychology</em>, 1(1), 42&ndash;45.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.20982/tqmp.01.1.p042")}
+</p>
+<p>Morey, R. D. (2008). Confidence intervals from normalized data:
+A correction to Cousineau (2005).
+<em>Tutorials in Quantitative Methods for Psychology</em>, 4(2), 61&ndash;64.
+\Sexpr[results=rd]{tools:::Rd_expr_doi("10.20982/tqmp.04.2.p061")}
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>optimal_graph</code></p>
+
+</main>
+
+</div>
+</body></html>

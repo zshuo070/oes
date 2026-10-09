@@ -1,0 +1,37 @@
+{
+  "recorded": "2026-10-08T21:09:00.434949+00:00",
+  "archive_sha256": "0580abe12189764a36028b7adfe8d4d065d921cbb2327e1f220e3a08b5b3b483",
+  "windows_release": {
+    "status": "upload_response_confirmed",
+    "latest_attempt": "2026-10-08T21:10:45.124643+00:00",
+    "receipt": "platform_checks/final-retry-1-receipts/windows_release.json",
+    "final_archive_accepted": true,
+    "reason": null,
+    "results_delivery": "maintainer email: zshuo070@gmail.com"
+  },
+  "windows_devel": {
+    "status": "upload_response_confirmed",
+    "queued": "2026-10-08T21:05:37.210715+00:00",
+    "results_delivery": "maintainer email: zshuo070@gmail.com"
+  },
+  "macos_release_final_archive": {
+    "status": "unknown_post_outcome",
+    "attempt_times": [
+      "2026-10-08T21:05:40.162878+00:00",
+      "2026-10-08T21:08:12.895939+00:00"
+    ],
+    "http_statuses": [
+      502,
+      502
+    ],
+    "result_url": null,
+    "further_retries": false
+  },
+  "superseded_mac_checks": {
+    "archive_sha256": "343d77eab4b6899b62b54e14e0cf45cea493744d8a18065703ecc0e8d3a90e88",
+    "actual_runtime": "R4.6.1 Patched on Apple Silicon macOS26.6",
+    "status": "OK",
+    "assertions": 384,
+    "scope": "Numerically identical implementation sources; earlier archive differs in generated build metadata."
+  }
+}

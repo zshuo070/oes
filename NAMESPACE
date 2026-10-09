@@ -1,0 +1,3 @@
+# Maintained explicitly until the documentation-generation workflow is set up.
+export(optimal_graph)
+importFrom(rlang,.data)

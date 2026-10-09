@@ -1,0 +1,199 @@
+Package	Version	Built	LibPath
+Rcpp	1.1.2	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:53:57 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+clock	0.7.4	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:55:01 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+dplyr	1.2.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:59:17 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+fansi	1.0.7	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:54:58 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+fs	2.1.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:53:54 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+haven	2.5.5	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:58:35 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+lifecycle	1.0.5	R 4.6.1; ; 2026-10-08 20:59:15 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+pkgload	1.5.3	R 4.6.1; ; 2026-10-08 20:54:44 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+proxy	0.4-29	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:55:25 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+purrr	1.2.2	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:55:22 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+readr	2.2.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:57:59 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+readxl	1.5.0.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:54:47 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+testthat	3.3.2	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:56:27 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+tibble	3.3.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:55:19 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+tidyr	1.3.2	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:59:24 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+tidyselect	1.2.1	R 4.6.1; ; 2026-10-08 20:58:44 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+vctrs	0.7.3	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:53:55 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+yaml	2.3.12	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:55:27 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib2
+R6	2.6.1	R 4.6.1; ; 2026-10-08 20:50:30 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+bit	4.6.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:33 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+brio	1.1.5	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:47:46 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+cli	3.6.6	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:32 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+cpp11	0.5.5	R 4.6.1; ; 2026-10-08 20:50:31 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+data.table	1.18.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:34 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+evaluate	1.0.5	R 4.6.1; ; 2026-10-08 20:50:28 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+isoband	0.3.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:44 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+jsonlite	2.0.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:29 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+otel	0.2.0	R 4.6.1; ; 2026-10-08 20:50:29 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+ps	1.9.3	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:29 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+rlang	1.3.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:46:19 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+timechange	0.4.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:38 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+tzdb	0.5.0	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:50:37 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+waldo	0.6.2	R 4.6.1; ; 2026-10-08 20:50:41 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+withr	3.0.3	R 4.6.1; ; 2026-10-08 20:50:30 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release-lib
+S7	0.2.2	R 4.3.3; x86_64-pc-linux-gnu; 2026-10-08 17:15:38 UTC; unix	/workspace/scratch/4c213f01dace/Rlibs
+V8	8.2.0	R 4.3.3; x86_64-pc-linux-gnu; 2026-10-08 20:43:42 UTC; unix	/workspace/scratch/4c213f01dace/Rlibs
+ggplot2	4.0.3	R 4.3.3; ; 2026-10-08 17:15:46 UTC; unix	/workspace/scratch/4c213f01dace/Rlibs
+ggsci	5.2.0	R 4.3.3; ; 2026-10-08 20:39:51 UTC; unix	/workspace/scratch/4c213f01dace/Rlibs
+gtable	0.3.6	R 4.3.3; ; 2026-10-08 17:15:36 UTC; unix	/workspace/scratch/4c213f01dace/Rlibs
+scales	1.4.0	R 4.3.3; ; 2026-10-08 17:15:40 UTC; unix	/workspace/scratch/4c213f01dace/Rlibs
+MatrixModels	0.5-3	R 4.3.2; ; 'Fri, 17 Nov 2023 10:12:52 -0600'; unix	/usr/lib/R/site-library
+ModelMetrics	1.2.2.2	R 4.0.1; x86_64-pc-linux-gnu; 'Sat, 30 May 2020 16:40:16 +0000'; unix	/usr/lib/R/site-library
+R.methodsS3	1.8.2	R 4.2.0; ; 'Fri, 24 Jun 2022 08:44:19 +0200'; unix	/usr/lib/R/site-library
+R.oo	1.26.0	R 4.3.2; ; 'Wed, 31 Jan 2024 21:57:08 +0100'; unix	/usr/lib/R/site-library
+R.utils	2.12.3	R 4.3.2; ; 'Fri, 24 Nov 2023 08:57:36 +0100'; unix	/usr/lib/R/site-library
+R6	2.5.1	R 4.1.1; ; 'Sat, 21 Aug 2021 18:04:39 +0000'; unix	/usr/lib/R/site-library
+RColorBrewer	1.1-3	R 4.2.0; ; 'Fri, 20 May 2022 15:51:46 +0000'; unix	/usr/lib/R/site-library
+Rcpp	1.0.12	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 09 Jan 2024 06:36:19 -0600'; unix	/usr/lib/R/site-library
+RcppArmadillo	0.12.8.1.0	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 01 Apr 2024 18:27:56 +1100'; unix	/usr/lib/R/site-library
+RcppEigen	0.3.4.0.0	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 01 Apr 2024 18:33:06 +1100'; unix	/usr/lib/R/site-library
+SQUAREM	2021.1	R 4.0.3; ; 'Sat, 16 Jan 2021 17:57:08 +0100'; unix	/usr/lib/R/site-library
+SparseM	1.81	R 4.0.4; x86_64-pc-linux-gnu; 'Thu, 18 Feb 2021 19:17:58 -0600'; unix	/usr/lib/R/site-library
+abind	1.4-5	R 4.0.1; ; 'Fri, 15 May 2020 20:44:38 -0500'; unix	/usr/lib/R/site-library
+backports	1.4.1	R 4.1.2; x86_64-pc-linux-gnu; 'Mon, 20 Dec 2021 14:15:42 +0100'; unix	/usr/lib/R/site-library
+bit	4.0.5	R 4.2.2; x86_64-pc-linux-gnu; 'Mon, 21 Nov 2022 11:26:41 +0100'; unix	/usr/lib/R/site-library
+bit64	4.0.5	R 4.0.2; x86_64-pc-linux-gnu; 'Tue, 01 Sep 2020 16:57:35 +0200'; unix	/usr/lib/R/site-library
+brio	1.1.4	R 4.3.2; x86_64-pc-linux-gnu; 'Mon, 18 Dec 2023 15:33:06 +0100'; unix	/usr/lib/R/site-library
+broom	1.0.5	R 4.3.0; ; 'Mon, 12 Jun 2023 09:11:58 +0200'; unix	/usr/lib/R/site-library
+callr	3.7.5	R 4.3.3; ; 'Tue, 05 Mar 2024 14:15:34 +0100'; unix	/usr/lib/R/site-library
+car	3.1-2	R 4.3.1; ; 'Sun, 18 Jun 2023 11:18:22 -0500'; unix	/usr/lib/R/site-library
+carData	3.0-5	R 4.1.2; ; 'Sat, 05 Feb 2022 10:05:16 -0600'; unix	/usr/lib/R/site-library
+caret	6.0-94	R 4.3.0; x86_64-pc-linux-gnu; 'Mon, 12 Jun 2023 14:29:11 +0200'; unix	/usr/lib/R/site-library
+cellranger	1.1.0	R 4.0.1; ; 'Tue, 19 May 2020 07:30:10 -0500'; unix	/usr/lib/R/site-library
+cli	3.6.2	R 4.3.2; x86_64-pc-linux-gnu; 'Wed, 20 Dec 2023 19:46:42 +0100'; unix	/usr/lib/R/site-library
+clipr	0.8.0	R 4.1.2; ; 'Thu, 24 Feb 2022 02:46:41 +0530'; unix	/usr/lib/R/site-library
+clock	0.7.0	R 4.3.1; x86_64-pc-linux-gnu; 'Sun, 13 Aug 2023 09:17:02 -0500'; unix	/usr/lib/R/site-library
+colorspace	2.1-0	R 4.2.2; x86_64-pc-linux-gnu; 'Fri, 27 Jan 2023 09:00:41 +0100'; unix	/usr/lib/R/site-library
+conquer	1.3.3	R 4.2.2; x86_64-pc-linux-gnu; 'Fri, 10 Mar 2023 15:36:04 -0600'; unix	/usr/lib/R/site-library
+corrplot	0.92	R 4.1.2; ; 'Tue, 23 Nov 2021 19:22:32 +0530'; unix	/usr/lib/R/site-library
+cpp11	0.4.7	R 4.3.2; ; 'Wed, 20 Dec 2023 20:16:16 +0100'; unix	/usr/lib/R/site-library
+crayon	1.5.2	R 4.2.2; ; 'Sat, 08 Oct 2022 08:56:04 +0200'; unix	/usr/lib/R/site-library
+curl	5.2.0	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 01 Apr 2024 18:26:48 +1100'; unix	/usr/lib/R/site-library
+data.table	1.14.10	R 4.3.2; x86_64-pc-linux-gnu; 'Wed, 20 Dec 2023 20:38:56 +0100'; unix	/usr/lib/R/site-library
+desc	1.4.3	R 4.3.2; ; 'Wed, 20 Dec 2023 20:38:21 +0100'; unix	/usr/lib/R/site-library
+diagram	1.6.5	R 4.3.1; ; 'Wed, 28 Jun 2023 11:08:27 +0200'; unix	/usr/lib/R/site-library
+diffobj	0.3.5	R 4.1.1; x86_64-pc-linux-gnu; 'Tue, 12 Oct 2021 19:53:03 +0200'; unix	/usr/lib/R/site-library
+digest	0.6.34	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 11 Jan 2024 11:57:44 -0600'; unix	/usr/lib/R/site-library
+dplyr	1.1.4	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 23 Nov 2023 07:18:35 +0100'; unix	/usr/lib/R/site-library
+e1071	1.7-14	R 4.3.2; x86_64-pc-linux-gnu; 'Mon, 11 Dec 2023 06:44:33 -0600'; unix	/usr/lib/R/site-library
+ellipsis	0.3.2	R 4.1.1; x86_64-pc-linux-gnu; 'Mon, 16 Aug 2021 13:00:38 -0500'; unix	/usr/lib/R/site-library
+evaluate	0.23	R 4.3.2; ; 'Thu, 09 Nov 2023 18:04:46 +0100'; unix	/usr/lib/R/site-library
+fansi	1.0.5	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 21 Nov 2023 08:13:23 +0100'; unix	/usr/lib/R/site-library
+farver	2.1.1	R 4.2.1; x86_64-pc-linux-gnu; 'Tue, 12 Jul 2022 11:34:42 +0200'; unix	/usr/lib/R/site-library
+forcats	1.0.0	R 4.2.2; ; 'Wed, 01 Feb 2023 11:58:16 -0600'; unix	/usr/lib/R/site-library
+foreach	1.5.2	R 4.1.2; ; 'Thu, 03 Feb 2022 14:06:44 -0600'; unix	/usr/lib/R/site-library
+formatR	1.14	R 4.2.2; ; 'Thu, 19 Jan 2023 16:02:27 +0100'; unix	/usr/lib/R/site-library
+fs	1.6.3	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 01 Apr 2024 18:34:14 +1100'; unix	/usr/lib/R/site-library
+future	1.33.1	R 4.3.2; ; 'Mon, 08 Jan 2024 17:45:58 +0100'; unix	/usr/lib/R/site-library
+future.apply	1.11.1	R 4.3.2; ; 'Mon, 08 Jan 2024 17:45:54 +0100'; unix	/usr/lib/R/site-library
+generics	0.1.3	R 4.2.1; ; 'Thu, 14 Jul 2022 09:10:04 +0200'; unix	/usr/lib/R/site-library
+ggplot2	3.4.4	R 4.3.1; ; 'Tue, 17 Oct 2023 11:03:27 +0200'; unix	/usr/lib/R/site-library
+globals	0.16.2	R 4.2.2; ; 'Mon, 28 Nov 2022 13:37:36 +0100'; unix	/usr/lib/R/site-library
+glue	1.7.0	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 18 Jan 2024 13:24:57 +0100'; unix	/usr/lib/R/site-library
+gower	1.0.1	R 4.2.2; x86_64-pc-linux-gnu; 'Fri, 30 Dec 2022 18:35:57 +0530'; unix	/usr/lib/R/site-library
+gtable	0.3.4	R 4.3.1; ; 'Wed, 30 Aug 2023 13:58:30 +0200'; unix	/usr/lib/R/site-library
+hardhat	1.3.1	R 4.3.2; ; 'Tue, 13 Feb 2024 14:53:29 +0100'; unix	/usr/lib/R/site-library
+haven	2.5.4	R 4.3.2; x86_64-pc-linux-gnu; 'Fri, 01 Dec 2023 06:37:40 -0600'; unix	/usr/lib/R/site-library
+highr	0.10	R 4.2.2; ; 'Fri, 30 Dec 2022 18:33:25 +0530'; unix	/usr/lib/R/site-library
+hms	1.1.3	R 4.3.1; ; 'Thu, 22 Jun 2023 16:55:09 +0200'; unix	/usr/lib/R/site-library
+ipred	0.9-14	R 4.3.1; x86_64-pc-linux-gnu; 'Fri, 23 Jun 2023 11:49:24 +0200'; unix	/usr/lib/R/site-library
+isoband	0.2.7	R 4.2.2; x86_64-pc-linux-gnu; 'Fri, 23 Dec 2022 06:19:29 +0100'; unix	/usr/lib/R/site-library
+iterators	1.0.14	R 4.1.2; ; 'Sat, 05 Feb 2022 09:04:53 -0600'; unix	/usr/lib/R/site-library
+jsonlite	1.8.8	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 05 Dec 2023 14:08:52 +0100'; unix	/usr/lib/R/site-library
+knitr	1.45	R 4.3.2; ; 'Thu, 09 Nov 2023 19:33:07 +0100'; unix	/usr/lib/R/site-library
+labeling	0.4.3	R 4.3.1; ; 'Thu, 31 Aug 2023 17:09:05 +0200'; unix	/usr/lib/R/site-library
+lava	1.7.3	R 4.3.2; ; 'Sun, 10 Dec 2023 10:47:03 +0100'; unix	/usr/lib/R/site-library
+lifecycle	1.0.4	R 4.3.2; ; 'Tue, 21 Nov 2023 10:51:28 +0100'; unix	/usr/lib/R/site-library
+listenv	0.9.1	R 4.3.2; ; 'Thu, 01 Feb 2024 16:53:26 +0100'; unix	/usr/lib/R/site-library
+littler	0.3.19	R 4.3.2; x86_64-pc-linux-gnu; "Sun, 17 Dec 2023 17:41:04 -0600"; unix	/usr/lib/R/site-library
+lme4	1.1-35.1	R 4.3.2; x86_64-pc-linux-gnu; 'Mon, 20 Nov 2023 07:45:20 -0600'; unix	/usr/lib/R/site-library
+lubridate	1.9.3	R 4.3.1; x86_64-pc-linux-gnu; 'Sat, 14 Oct 2023 08:02:21 +0200'; unix	/usr/lib/R/site-library
+magrittr	2.0.3	R 4.1.2; x86_64-pc-linux-gnu; 'Wed, 04 May 2022 14:47:45 +0200'; unix	/usr/lib/R/site-library
+maptools	1.1-8	R 4.3.1; x86_64-pc-linux-gnu; 'Mon, 24 Jul 2023 19:12:46 +0200'; unix	/usr/lib/R/site-library
+matrixStats	1.2.0	R 4.3.2; x86_64-pc-linux-gnu; 'Mon, 08 Jan 2024 22:34:43 +0100'; unix	/usr/lib/R/site-library
+minqa	1.2.6	R 4.3.1; x86_64-pc-linux-gnu; 'Wed, 13 Sep 2023 08:15:04 -0500'; unix	/usr/lib/R/site-library
+munsell	0.5.0	R 4.0.1; ; 'Sat, 30 May 2020 14:18:44 +0000'; unix	/usr/lib/R/site-library
+nloptr	2.0.3	R 4.2.0; x86_64-pc-linux-gnu; 'Sun, 29 May 2022 08:58:20 -0500'; unix	/usr/lib/R/site-library
+numDeriv	2016.8-1.1	R 4.0.1; ; 'Fri, 15 May 2020 21:48:46 -0500'; unix	/usr/lib/R/site-library
+openxlsx	4.2.5.2	R 4.2.2; x86_64-pc-linux-gnu; 'Sun, 12 Feb 2023 18:03:49 -0600'; unix	/usr/lib/R/site-library
+pROC	1.18.5	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 21 Nov 2023 16:29:27 +0100'; unix	/usr/lib/R/site-library
+parallelly	1.37.1	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 01 Apr 2024 18:34:27 +1100'; unix	/usr/lib/R/site-library
+pbkrtest	0.5.2	R 4.2.2; ; 'Sat, 28 Jan 2023 18:35:04 -0600'; unix	/usr/lib/R/site-library
+pillar	1.9.0	R 4.3.0; ; 'Tue, 13 Jun 2023 12:40:31 +0200'; unix	/usr/lib/R/site-library
+pkgKitten	0.2.3	R 4.2.2; ; 'Sat, 11 Mar 2023 13:45:01 -0600'; unix	/usr/lib/R/site-library
+pkgbuild	1.4.3	R 4.3.2; ; 'Tue, 09 Jan 2024 08:25:57 +0100'; unix	/usr/lib/R/site-library
+pkgconfig	2.0.3	R 4.0.1; ; 'Sat, 30 May 2020 10:19:57 +0000'; unix	/usr/lib/R/site-library
+pkgload	1.3.4	R 4.3.2; ; 'Tue, 16 Jan 2024 16:58:42 +0100'; unix	/usr/lib/R/site-library
+plyr	1.8.9	R 4.3.1; x86_64-pc-linux-gnu; 'Sun, 15 Oct 2023 08:15:33 +0200'; unix	/usr/lib/R/site-library
+praise	1.0.0	R 4.0.1; ; 'Sat, 30 May 2020 10:24:16 +0000'; unix	/usr/lib/R/site-library
+prettyunits	1.2.0	R 4.3.1; ; 'Tue, 17 Oct 2023 11:11:49 +0200'; unix	/usr/lib/R/site-library
+processx	3.8.3	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 19 Dec 2023 17:53:54 +0100'; unix	/usr/lib/R/site-library
+prodlim	2023.08.28	R 4.3.1; x86_64-pc-linux-gnu; 'Fri, 01 Sep 2023 11:55:37 +0200'; unix	/usr/lib/R/site-library
+progress	1.2.3	R 4.3.2; ; 'Tue, 09 Jan 2024 08:28:06 +0100'; unix	/usr/lib/R/site-library
+progressr	0.14.0	R 4.3.1; ; 'Fri, 01 Sep 2023 11:55:26 +0200'; unix	/usr/lib/R/site-library
+proxy	0.4-27	R 4.2.0; x86_64-pc-linux-gnu; 'Fri, 24 Jun 2022 08:41:37 +0200'; unix	/usr/lib/R/site-library
+ps	1.7.6	R 4.3.2; x86_64-pc-linux-gnu; 'Wed, 31 Jan 2024 13:08:25 +0100'; unix	/usr/lib/R/site-library
+purrr	1.0.2	R 4.3.1; x86_64-pc-linux-gnu; 'Mon, 04 Sep 2023 13:52:32 +0200'; unix	/usr/lib/R/site-library
+quantreg	5.97	R 4.3.1; x86_64-pc-linux-gnu; 'Sat, 19 Aug 2023 10:22:17 -0500'; unix	/usr/lib/R/site-library
+readr	2.1.5	R 4.3.2; x86_64-pc-linux-gnu; 'Sat, 13 Jan 2024 10:43:43 -0600'; unix	/usr/lib/R/site-library
+readxl	1.4.3	R 4.3.1; x86_64-pc-linux-gnu; 'Fri, 07 Jul 2023 11:54:50 -0500'; unix	/usr/lib/R/site-library
+recipes	1.0.9	R 4.3.2; ; 'Tue, 09 Jan 2024 08:38:20 +0100'; unix	/usr/lib/R/site-library
+rematch	2.0.0	R 4.3.1; ; 'Wed, 06 Sep 2023 06:51:08 -0500'; unix	/usr/lib/R/site-library
+rematch2	2.1.2	R 4.0.1; ; 'Sun, 31 May 2020 05:54:23 +0000'; unix	/usr/lib/R/site-library
+reshape2	1.4.4	R 4.0.1; x86_64-pc-linux-gnu; 'Sat, 30 May 2020 19:32:25 +0000'; unix	/usr/lib/R/site-library
+rio	1.0.1	R 4.3.1; ; 'Wed, 18 Oct 2023 03:31:48 -0500'; unix	/usr/lib/R/site-library
+rlang	1.1.3	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 18 Jan 2024 14:16:25 +0100'; unix	/usr/lib/R/site-library
+rprojroot	2.0.4	R 4.3.2; ; 'Tue, 21 Nov 2023 16:48:25 +0100'; unix	/usr/lib/R/site-library
+rstatix	0.7.2	R 4.2.2; ; 'Mon, 06 Feb 2023 14:05:51 +0100'; unix	/usr/lib/R/site-library
+scales	1.3.0	R 4.3.2; ; 'Tue, 09 Jan 2024 09:20:50 +0100'; unix	/usr/lib/R/site-library
+shape	1.4.6	R 4.1.1; ; 'Thu, 26 Aug 2021 07:50:50 +0200'; unix	/usr/lib/R/site-library
+sp	2.1-2	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 09 Jan 2024 09:27:42 +0100'; unix	/usr/lib/R/site-library
+statmod	1.5.0	R 4.2.2; x86_64-pc-linux-gnu; 'Fri, 13 Jan 2023 09:42:13 +0100'; unix	/usr/lib/R/site-library
+stringi	1.8.3	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 09 Jan 2024 09:35:19 +0100'; unix	/usr/lib/R/site-library
+stringr	1.5.1	R 4.3.2; ; 'Tue, 21 Nov 2023 21:12:55 +0100'; unix	/usr/lib/R/site-library
+testthat	3.2.1	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 09 Jan 2024 09:37:58 +0100'; unix	/usr/lib/R/site-library
+tibble	3.2.1	R 4.3.1; x86_64-pc-linux-gnu; 'Thu, 06 Jul 2023 09:02:39 +0200'; unix	/usr/lib/R/site-library
+tidyr	1.3.1	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 01 Feb 2024 20:50:19 +0100'; unix	/usr/lib/R/site-library
+tidyselect	1.2.0	R 4.2.2; ; 'Fri, 14 Oct 2022 12:15:14 +0200'; unix	/usr/lib/R/site-library
+timeDate	4032.109	R 4.3.2; ; 'Fri, 15 Dec 2023 11:02:52 -0600'; unix	/usr/lib/R/site-library
+timechange	0.3.0	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 01 Feb 2024 21:10:00 +0100'; unix	/usr/lib/R/site-library
+tzdb	0.4.0	R 4.3.1; x86_64-pc-linux-gnu; 'Thu, 22 Jun 2023 20:57:58 -0500'; unix	/usr/lib/R/site-library
+utf8	1.2.4	R 4.3.1; x86_64-pc-linux-gnu; 'Mon, 23 Oct 2023 17:09:23 +0200'; unix	/usr/lib/R/site-library
+vctrs	0.6.5	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 19 Dec 2023 14:44:29 +0100'; unix	/usr/lib/R/site-library
+viridisLite	0.4.2	R 4.3.1; ; 'Thu, 22 Jun 2023 21:00:03 -0500'; unix	/usr/lib/R/site-library
+vroom	1.6.5	R 4.3.2; x86_64-pc-linux-gnu; 'Sat, 09 Dec 2023 16:43:09 -0600'; unix	/usr/lib/R/site-library
+waldo	0.5.2	R 4.3.2; ; 'Fri, 24 Nov 2023 11:12:30 +0100'; unix	/usr/lib/R/site-library
+withr	2.5.0	R 4.1.2; ; 'Sun, 20 Mar 2022 02:35:46 +0530'; unix	/usr/lib/R/site-library
+writexl	1.5.0	R 4.3.2; x86_64-pc-linux-gnu; 'Sun, 11 Feb 2024 09:44:50 -0600'; unix	/usr/lib/R/site-library
+xfun	0.41	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 21 Nov 2023 21:36:02 +0100'; unix	/usr/lib/R/site-library
+yaml	2.3.8	R 4.3.2; x86_64-pc-linux-gnu; 'Tue, 19 Dec 2023 11:50:23 +0100'; unix	/usr/lib/R/site-library
+zip	2.3.1	R 4.3.2; x86_64-pc-linux-gnu; 'Mon, 29 Jan 2024 07:29:48 -0600'; unix	/usr/lib/R/site-library
+KernSmooth	2.23-22	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 22 Apr 2024 13:10:30 +0200'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+MASS	7.3-60.0.1	R 4.3.2; x86_64-pc-linux-gnu; 'Sun, 14 Jan 2024 08:35:01 -0600'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+Matrix	1.6-5	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 11 Jan 2024 21:33:49 -0600'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+boot	1.3-30	R 4.3.2; ; 'Sun, 25 Feb 2024 19:23:39 -0600'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+class	7.3-22	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 22 Apr 2024 13:11:21 +0200'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+codetools	0.2-19	R 4.2.2; ; 'Wed, 01 Feb 2023 17:08:11 -0600'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+foreign	0.8-86	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 22 Apr 2024 13:10:33 +0200'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+lattice	0.22-5	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 22 Apr 2024 13:10:32 +0200'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+mgcv	1.9-1	R 4.3.2; x86_64-pc-linux-gnu; 'Thu, 21 Dec 2023 07:15:57 -0600'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+nlme	3.1-164	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 22 Apr 2024 13:10:55 +0200'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+nnet	7.3-19	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 22 Apr 2024 13:11:25 +0200'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+rpart	4.1.23	R 4.3.3; x86_64-pc-linux-gnu; 'Mon, 22 Apr 2024 13:11:32 +0200'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+survival	3.5-8	R 4.3.2; x86_64-pc-linux-gnu; 'Wed, 14 Feb 2024 07:25:45 -0600'; unix	/workspace/scratch/4c213f01dace/qa/current-r-recommended-lib
+base	4.6.1	R 4.6.1; ; 2026-10-08 20:45:13 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+compiler	4.6.1	R 4.6.1; ; 2026-10-08 20:44:28 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+datasets	4.6.1	R 4.6.1; ; 2026-10-08 20:44:54 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+grDevices	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:44:28 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+graphics	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:44:33 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+grid	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:45:06 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+methods	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:44:55 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+parallel	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:45:12 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+splines	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:45:11 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+stats	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:44:38 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+stats4	4.6.1	R 4.6.1; ; 2026-10-08 20:45:11 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+tcltk	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:45:12 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+tools	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:44:28 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library
+utils	4.6.1	R 4.6.1; x86_64-pc-linux-gnu; 2026-10-08 20:44:28 UTC; unix	/workspace/scratch/4c213f01dace/qa/current-r-release/lib/R/library

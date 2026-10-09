@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-09",
+  "steps_1_through_6": "passed_after_scoped_plot_fixes",
+  "test_cases": 30,
+  "passed_assertions": 465,
+  "failures": 0,
+  "errors": 0,
+  "warnings": 0,
+  "skips": 0,
+  "linux_as_cran": {
+    "errors": 0,
+    "warnings": 0,
+    "notes": 3,
+    "note_reasons": [
+      "New submission",
+      "Missing HTML tidy validator",
+      "Residual local installation lock"
+    ]
+  },
+  "source_archive_sha256": "2249ccbe63a60a6af05ad5cb80b622bf4fd4a66f72367624fe6eb9ba2f7c8983",
+  "source_size_bytes": 42648,
+  "archive_files_compared_with_current_source": [
+    "LICENSE",
+    "NAMESPACE",
+    "NEWS.md",
+    "R/globals.R",
+    "R/oes.R",
+    "README.md",
+    "inst/CITATION",
+    "inst/doc/error-bar-data-source.md",
+    "inst/doc/methods-guide.md",
+    "man/oes-package.Rd",
+    "man/oes.Rd",
+    "man/optimal_graph.Rd",
+    "tests/testthat.R",
+    "tests/testthat/README.md",
+    "tests/testthat/helper-fixtures.R",
+    "tests/testthat/test-effect-sizes.R",
+    "tests/testthat/test-error-bars.R",
+    "tests/testthat/test-inputs-and-ranges.R",
+    "tests/testthat/test-multilevel-oracles.R",
+    "tests/testthat/test-plot-fallbacks.R",
+    "tests/testthat/test-plot-layouts.R",
+    "tests/testthat/test-public-api.R",
+    "tests/testthat/test-supplied-examples.R"
+  ],
+  "runnable_help_guide_and_study4b_examples": "passed",
+  "rd_parse_and_render": "passed",
+  "manual_visual_review": "passed",
+  "windows_macos_checks_of_current_archive": "not_run",
+  "published": false,
+  "cran_submitted": false
+}

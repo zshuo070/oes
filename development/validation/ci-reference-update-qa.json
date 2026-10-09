@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "change": "Cousineau2017 main CI adjustment reference",
+  "source_archive_sha256": "50b28971ad1c94a103a6f9445c89237ed9aca912cc7094db06e7e8af442a4a9b",
+  "build": "passed",
+  "Rd_parse_check_HTML": "passed",
+  "PDF_compile_visual_review": "passed",
+  "relative_links": "passed",
+  "R_code_namespace_tests": "unchanged",
+  "DESCRIPTION_change": "Description only",
+  "new_full_tests": false,
+  "new_full_as_cran": false
+}

@@ -1,0 +1,5 @@
+{
+  "manual_retry_of": "/workspace/scratch/4c213f01dace/platform_checks/final-receipts/windows_release.json",
+  "reviewed": "2026-10-08T21:10:37.611047+00:00",
+  "root_review": "One explicit retry authorized after the original filename-busy upload rejection and approximately five-minute wait. Name, version, archive bytes unchanged."
+}
