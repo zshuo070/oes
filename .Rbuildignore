@@ -1,1 +1,5 @@
-
+^oes\.Rproj$
+^\.Rproj\.user$
+^development$
+^LICENSE\.md$
+^[.]github$
